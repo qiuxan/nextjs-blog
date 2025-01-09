@@ -1,5 +1,7 @@
-
+import dbConnect from "@/utils/dbConnect";
 export default function Home() {
+
+  dbConnect();
   return (
     <div className="d-flex justify-content-center align-items-center vh-90">
       <div className="text-center">
