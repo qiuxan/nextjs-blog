@@ -15,7 +15,7 @@ export default function ThemeToggle() {
         <>
             {mounted && (
                 <button className="nav-link" onClick={toggleTheme}>
-                    {theme === "light" ? "Dark" : "Light"}
+                    {theme === "light" ? "☀️" : "🌙"}
                 </button>
             )}
         </> 
