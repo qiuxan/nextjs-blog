@@ -30,7 +30,7 @@ export default function Register() {
             const data = await response.json();
 
             if (!response.ok) {
-                toast.error(data.err);
+                toast.error(data.message);
                 setLoading(false);
               } else {
                 toast.success(data.success);
