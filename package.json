@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@types/mongoose-unique-validator": "^1.0.9",
+    "bcrypt": "^5.1.1",
     "bootstrap": "^5.3.3",
     "mongoose": "^8.9.3",
     "next": "15.1.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

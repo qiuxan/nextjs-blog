@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import mongooseUniqueValidator from "mongoose-unique-validator";
 
 const userSchema = new mongoose.Schema(
     {
@@ -32,6 +31,5 @@ const userSchema = new mongoose.Schema(
     {timestamps:true}
 );
 
-userSchema.plugin(mongooseUniqueValidator,{message:"{PATH} is already taken"});
 
 export default mongoose.models.User || mongoose.model("User",userSchema);

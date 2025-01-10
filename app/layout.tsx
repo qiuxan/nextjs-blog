@@ -4,6 +4,7 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ThemeProvider } from "@/context/theme";
 import TopNav from "@/components/nav/TopNav";
+import { Toaster } from "react-hot-toast";
 
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({
       <ThemeProvider>
         <body>
           <TopNav />
+          <Toaster />
           {children}
         </body>
       </ThemeProvider>
