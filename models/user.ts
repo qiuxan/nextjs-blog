@@ -32,6 +32,6 @@ const userSchema = new mongoose.Schema(
     {timestamps:true}
 );
 
-userSchema.plugin(mongooseUniqueValidator, {message: "{PATH} is already taken"});
+userSchema.plugin(mongooseUniqueValidator, {message: "is already taken"});
 
 export default mongoose.models.User || mongoose.model("User",userSchema);
