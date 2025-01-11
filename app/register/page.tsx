@@ -33,7 +33,7 @@ export default function Register() {
                 toast.error(data.message);
                 setLoading(false);
               } else {
-                toast.success(data.success);
+                toast.success(data.message);
                 router.push("/login");
             }
 
