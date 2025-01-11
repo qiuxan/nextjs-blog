@@ -44,7 +44,7 @@ export default function Register() {
         }
     }
     return(
-        <div className="contaioner">
+        <div className="container">
             <div className="row d-flex justify-content-center align-items-center vh-90">
                 <div className="col-lg-5 p-4 shadow">
                     <h2 className="fw-bold lead mb-4">Register</h2>

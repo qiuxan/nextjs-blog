@@ -2,13 +2,42 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
+
+
+
 
 export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
 
+    const router = useRouter();
+
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setLoading(true);
+
+        const result = await signIn("credentials", {
+            redirect: false,
+            email,
+            password,
+        });
+
+        setLoading(false);
+        if(result){
+            if (result.error) {
+                toast.error(result.error);
+            } else {
+                toast.success("Logged in successfully");
+                router.push("/");
+            }
+        }else{
+            toast.error("An error occurred");
+        }
+
     };
     
     return (

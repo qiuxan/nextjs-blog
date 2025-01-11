@@ -11,6 +11,7 @@ export default function TopNav() {
     
             <div className="d-flex justify-content-center">
                 <Link className="nav-link" href="/register">Register</Link>
+                <Link className="nav-link" href="/login">Login</Link>
                 <ThemeToggle />
             </div>
             
