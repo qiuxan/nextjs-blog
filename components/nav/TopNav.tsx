@@ -6,7 +6,7 @@ export default function TopNav() {
     const { data, status } = useSession();
 
     return(
-        <nav className="nav shadow justify-content-between mb-2">
+        <nav className="nav shadow justify-content-between mb-3">
             <div className="d-flex justify-content-start">
                 <Link className="nav-link" href="/">Home</Link>
                 <Link className="nav-link" href="/blog/create">Create a blog</Link>
