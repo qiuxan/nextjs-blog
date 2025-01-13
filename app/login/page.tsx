@@ -73,7 +73,12 @@ export default function Login() {
                   {loading ? "Please wait.." : "Submit"}
                 </button>
               </form>
-
+              <button
+                onClick={() => signIn("google", { callbackUrl })}
+                className="btn btn-danger btn-lg w-100 my-4 shadow"
+              >
+                Sign in with Google
+              </button>
     
               <Link
                 href="/forgot-password"
